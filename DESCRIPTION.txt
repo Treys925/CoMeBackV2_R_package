@@ -1,0 +1,18 @@
+Package: comebackv2
+Type: Package
+Title: CoMeBackV2: Co-Methylation With Genomic CpG Background for EPICv2
+Version: 0.1.0
+Authors@R: person("Trey", "Smith", email = "treysm@umich.edu",
+                  role = c("aut", "cre"))
+Maintainer: Trey Smith <treysm@umich.edu>
+Description: Co-methylation of adjacent array probes, taking into account genomic CpG background. Function cmr() constructs co-methylated regions based on pair-wise positive correlations above variable correlation threshold.  The threshold increases linearly from a low value for low-density CpG background to a high value for high density background.  Pearson Corrlation is used. Modified for EPICv2 array.
+Depends: R (>= 2.14.0)
+ByteCompile: true
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: GenomicRanges
+NeedsCompilation: no
+Packaged: 2025-02-18 08:26:49 UTC; egg
+Author: Trey Smith [aut, cre]
