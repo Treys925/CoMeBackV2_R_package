@@ -7,5 +7,5 @@ https://github.com/Treys925/CoMeBackV2_R_package
 library(devtools) <br />
 install_github("Treys925/CoMeBackV2_R_package")
 
-CoMeBack:
+# CoMeBack:
 Evan Gatev, Nicole Gladish, Sara Mostafavi, Michael S Kobor, CoMeBack: DNA methylation array data analysis for co-methylated regions, Bioinformatics, Volume 36, Issue 9, May 2020, Pages 2675–2683, https://doi.org/10.1093/bioinformatics/btaa049
