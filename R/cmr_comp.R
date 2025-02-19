@@ -22,7 +22,7 @@ cmr_comp=function(cmrs,Mdata, cmethod=c("pca","mean","median"), retweights=F, ve
   nrTst=min(1000,nrMm)
   ncTst=min(1000,ncMm)
   if((nrMm>ncMm)&&(length(grep("cg",colnames(Mdata)[1:ncTst]))<1)&&(length(grep("cg",rownames(Mdata)[1:nrTst]))>0)) {
-    if (verbose) print("Note: Probes should be in colums, so slowing down now to gently transpose the data for you.\nPlease be patient and if this operation is not over by the time you finish reading this, then it would appear that your computer is rather slow, so you may want to go for a stroll, or just chill and comeback later.")
+    if (verbose) print("Note: Probes should be in columns, so slowing down now to gently transpose the data for you.\nPlease be patient and if this operation is not over by the time you finish reading this, then it would appear that your computer is rather slow, so you may want to go for a stroll, or just chill and comeback later.")
     Mdata=t(Mdata) # for the chilled doof who do not RTFM
   }
 
