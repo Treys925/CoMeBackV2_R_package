@@ -38,10 +38,10 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),cormethod=c("pea
 
   if (verbose) print("Getting CpG info, about to start estimation any day now.")
 
-    chr_seq_GpCpos=comeback:::init_data$chr_seq_GpCpos
-    if(Iarray=="450K") {EPIC_Manifest=comeback:::init_data$I450K_Manifest}
-    else if (Iarray == "EPIC"){EPIC_Manifest=comeback:::init_data$EPIC_Manifest}
-    else {EPIC_Manifest=comeback:::init_data$EPICv2_Manifest}
+    chr_seq_GpCpos=CoMeBackV2:::init_data$chr_seq_GpCpos
+    if(Iarray=="450K") {EPIC_Manifest=CoMeBackV2:::init_data$I450K_Manifest}
+    else if (Iarray == "EPIC"){EPIC_Manifest=CoMeBackV2:::init_data$EPIC_Manifest}
+    else {EPIC_Manifest=CoMeBackV2:::init_data$EPICv2_Manifest}
 
     EPIC_OK_prb=rownames(EPIC_Manifest)
 
