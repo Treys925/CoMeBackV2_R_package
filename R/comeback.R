@@ -1,4 +1,4 @@
-#' @details Currently, only the cmr function is provided.
+#' @details Description of cmr and cmr_comp functions
 #'
 #' @section cmr:
 #' The \code{cmr} function constructs co-methylated adjacent probe sets with correlated methylation across individuals,
