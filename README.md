@@ -1,7 +1,10 @@
 # CoMeBackV2
 Co-methylation of adjacent array probes, taking into account genomic CpG background. Function cmr() constructs co-methylated regions based on pair-wise positive correlations above variable correlation threshold.  The threshold increases linearly from a low value for low-density CpG background to a high value for high density background. Modified for the EPICv2 array and Homo sapiens (human) genome assembly GRCh38 (hg38) from Genome Reference Consortium.<br />
+Now adapted for genome assembly HS1 from T2T Consortium CHM13v2.0 <br />
+[https://www.science.org/doi/10.1126/science.abj6987](https://www.science.org/doi/10.1126/science.abj6987)
 <br />
 For EPICv2 please remove duplicate probes and use 10 character names (e.g. cg01534423)<br />
+For build HS1 please load all files from /data into the global environment<br />
 
 [https://github.com/Treys925/CoMeBackV2_R_package](https://github.com/Treys925/CoMeBackV2_R_package)
 
