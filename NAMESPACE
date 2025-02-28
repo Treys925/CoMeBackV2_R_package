@@ -2,7 +2,6 @@
 
 export(cmr)
 export(cmr_comp)
-export(HS1_450k)
 importFrom(stats,cor)
 importFrom(stats,median)
 importFrom(stats,prcomp)
