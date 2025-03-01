@@ -74,6 +74,7 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
     names(wkprbs_crd)=rownames(EPIC_Manifest)
 
     chrom_nams=unique(EPIC_Manifest$CHR)
+    chrom_nams=na.omit(chrom_nams)
     chrom_nams=chrom_nams[order(chrom_nams)]
     chroms=length(chrom_nams) # number of chromosomes present in the Mdata
 
