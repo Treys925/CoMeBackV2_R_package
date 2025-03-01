@@ -229,7 +229,7 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
       cmr_ac[[cni]]=cmr1dcr
       cmr_ac[[cni]]=cmr_ac[[cni]][sapply(cmr_ac[[cni]],length)>0]
 
-      if (verbose) print(paste("Done chr",as.character(cni),"with",length(cmr_ac[[cni]]),"cmrs"))
+      if (verbose) print(paste("Done",as.character(cni),"with",length(cmr_ac[[cni]]),"cmrs"))
     } # chromosome loop
   }
 
