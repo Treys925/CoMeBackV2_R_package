@@ -31,6 +31,7 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
 
   cormethod <- match.arg(cormethod)
   Iarray <- match.arg(Iarray)
+  Build <- match.arg(Build)
 
   if(is.null(corlo) && is.null(corhi)){
     corlo=corhi=ccutN_f(nrow(Mdata))
