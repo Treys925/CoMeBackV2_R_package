@@ -2,6 +2,7 @@
 
 export(cmr)
 export(cmr_comp)
+export(suggThresh)
 importFrom(stats,cor)
 importFrom(stats,median)
 importFrom(stats,prcomp)
