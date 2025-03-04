@@ -7,7 +7,8 @@
 suggThresh(matrix)
 }
 \arguments{
-\item{matrix}{matrix of beta or M-Values}
+\item{Data}{matrix of beta or M-Values}
+\item{Columns}{list of column i.e. probe names}
 }
 \value{
 numeric value representing a suggestive P-Value threshold
