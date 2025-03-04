@@ -8,8 +8,8 @@
 #'   \item{MAPINFO}{CpG position}
 #'   ...
 #' }
-"Anno450k"
 #' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
+"Anno450k"
 #'
 #' @format ## `AnnoEPIC`
 #' A data frame with 850k rows and 2 columns:
