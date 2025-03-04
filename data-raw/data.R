@@ -1,4 +1,49 @@
-### Creating internal and external data for CoMeBackV2 Package
+#' Creating internal and external data for CoMeBackV2 Package
+#'
+#' Use files from UCSC Genome Browser and Illumina Manifests
+#' 
+#'
+#' @format ## `Anno450k`
+#' A data frame with 450k rows and 2 columns:
+#' \describe{
+#'   \item{rownames}{CpG names}
+#'   \item{CHR}{chromosome}
+#'   \item{MAPINFO}{CpG position}
+#'   ...
+#' }
+#' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
+#'
+#' @format ## `AnnoEPIC`
+#' A data frame with 850k rows and 2 columns:
+#' \describe{
+#'   \item{rownames}{CpG names}
+#'   \item{CHR}{chromosome}
+#'   \item{MAPINFO}{CpG position}
+#'   ...
+#' }
+#' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
+#`
+#' @format ## `AnnoEPICv2`
+#' A data frame with 900k rows and 2 columns:
+#' \describe{
+#'   \item{rownames}{CpG names}
+#'   \item{CHR}{chromosome}
+#'   \item{MAPINFO}{CpG position}
+#'   ...
+#' }
+#' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
+#`
+#' @format ## `backgroundProbes`
+#' A list of 24:
+#' \describe{
+#'   \item{Chr1}{chromosome 1 CpG Positions}
+#'   \item{Chr2}{chromosome 2 CpG Positions}
+#'   \item{Chr3}{chromosome 3 CpG Positions}
+#'   ...
+#' }
+#' @source <https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hs1.html>
+#`
+### 
 #
 ## Code for installing necessary libraries is commented out
 #
