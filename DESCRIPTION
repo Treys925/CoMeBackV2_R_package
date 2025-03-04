@@ -13,7 +13,12 @@ Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
 RoxygenNote: 7.1.1
-Suggests: GenomicRanges, BiocManager, stringr 
+Suggests: 
+    GenomicRanges,
+    BiocManager,
+    stringr,
+    testthat (>= 3.0.0)
 NeedsCompilation: no
 Packaged: 2025-02-18 13:13:50 EST; egg
 Author: Trey Smith [aut, cre]
+Config/testthat/edition: 3
