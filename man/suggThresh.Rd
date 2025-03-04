@@ -4,7 +4,7 @@
 \alias{suggThresh}
 \title{Calculate suggestive P-Value threshold}
 \usage{
-suggThresh(matrix)
+suggThresh(Data,Columns)
 }
 \arguments{
 \item{Data}{matrix of beta or M-Values}
