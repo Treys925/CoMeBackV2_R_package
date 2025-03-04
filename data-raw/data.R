@@ -11,6 +11,7 @@
 #'   \item{MAPINFO}{CpG position}
 #'   ...
 #' }
+"Anno450k"
 #' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
 #'
 #' @format ## `AnnoEPIC`
@@ -22,6 +23,7 @@
 #'   ...
 #' }
 #' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
+"AnnoEPIC"
 #`
 #' @format ## `AnnoEPICv2`
 #' A data frame with 900k rows and 2 columns:
@@ -42,6 +44,7 @@
 #'   ...
 #' }
 #' @source <https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hs1.html>
+"backgroundProbes"
 #`
 ### 
 #
