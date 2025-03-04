@@ -8,6 +8,7 @@ cmr(
   Mdata,
   meds = NULL,
   Iarray = c("450K", "EPIC", "EPICv2"),
+  Build = c("hg38", "hs1"),
   cormethod = c("pearson", "kendall", "spearman"),
   corlo = NULL,
   corhi = corlo,
@@ -22,6 +23,8 @@ cmr(
 \item{Mdata}{matrix of betas, preferably cell-type corrected, or M-values, where rows are observations and colums are array probes.}
 
 \item{meds}{medians of probe betas, used if constraining adjacent probe maximum difference}
+
+\item{Build}{which Genome build, one of "hg38" (default) or "hs1". NOTE: for hs1 all files from /data must be loaded into the global environment.}
 
 \item{Iarray}{which Illumina array platform, one of "450K" (default), EPIC, or "EPICv2".}
 

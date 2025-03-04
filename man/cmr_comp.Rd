@@ -21,7 +21,7 @@ cmr_comp(
 
 \item{verbose}{report progress, default is TRUE}
 
-\item{cmrs=NULL}{is the list of CMRs construced with a call to the cmr function.  If not provided, CMRs are estimated with the methylation data.}
+\item{cmrs}{is the list of CMRs construced with a call to the cmr function.  If not provided, CMRs are estimated with the methylation data.}
 }
 \value{
 matrix of CMR composite methylation values, one column per CMR.
