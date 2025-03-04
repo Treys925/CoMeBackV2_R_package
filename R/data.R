@@ -31,6 +31,7 @@
 #'   ...
 #' }
 #' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
+"AnnoEPICv2"
 #`
 #' @format ## `backgroundProbes`
 #' A list of 24:

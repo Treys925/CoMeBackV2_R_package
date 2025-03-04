@@ -4,10 +4,11 @@
 \alias{suggThresh}
 \title{Calculate suggestive P-Value threshold}
 \usage{
-suggThresh(matrix)
+suggThresh(Data,Columns)
 }
 \arguments{
-\item{matrix}{matrix of beta or M-Values}
+\item{Data}{matrix of beta or M-Values}
+\item{Columns}{list of column i.e. probe names}
 }
 \value{
 numeric value representing a suggestive P-Value threshold
