@@ -269,11 +269,11 @@ AnnoEPICv2$CHR <- str_replace(AnnoEPICv2$CHR, "chr", "")
 
 ## Save CpG lists and annotations
 
-save(backgroundProbes, file = "./HS1_CpGs.rda")
+save(backgroundProbes, file = "./backgroundProbes.rda")
 
-save(Anno450k, file = "./HS1_450k.rda")
+save(Anno450k, file = "./Anno450k.rda")
 
-save(AnnoEPIC, file = "./HS1_EPIC.rda")
+save(AnnoEPIC, file = "./AnnoEPIC.rda")
 
-save(AnnoEPICv2, file = "./HS1_EPICv2.rda")
+save(AnnoEPICv2, file = "./AnnoEPICv2.rda")
 
