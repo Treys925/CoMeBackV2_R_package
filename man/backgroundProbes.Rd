@@ -17,7 +17,7 @@ List of CpGs by chromosome based on build hs1
   }
 }
 \details{
-
+All CpG site positions listed in genome build hs1 from T2T
 }
 \source{
 <https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hs1.html>
