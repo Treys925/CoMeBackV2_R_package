@@ -5,51 +5,6 @@
 #' Pearson Correlation is used by default, appropriate for cell-type corrected methylation betas.
 #' Creating internal and external data for CoMeBackV2 Package
 #'
-#' Use files from UCSC Genome Browser and Illumina Manifests for build HS1
-#' 
-#'
-#' @format ## `Anno450k`
-#' A data frame with 450k rows and 2 columns:
-#' \describe{
-#'   \item{rownames}{CpG names}
-#'   \item{CHR}{chromosome}
-#'   \item{MAPINFO}{CpG position}
-#'   ...
-#' }
-"Anno450k"
-#' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
-#'
-#' @format ## `AnnoEPIC`
-#' A data frame with 850k rows and 2 columns:
-#' \describe{
-#'   \item{rownames}{CpG names}
-#'   \item{CHR}{chromosome}
-#'   \item{MAPINFO}{CpG position}
-#'   ...
-#' }
-#' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
-"AnnoEPIC"
-#`
-#' @format ## `AnnoEPICv2`
-#' A data frame with 900k rows and 2 columns:
-#' \describe{
-#'   \item{rownames}{CpG names}
-#'   \item{CHR}{chromosome}
-#'   \item{MAPINFO}{CpG position}
-#'   ...
-#' }
-#' @source <https://hgdownload.cse.ucsc.edu/gbdb/hg38/liftOver/>
-#`
-#' @format ## `backgroundProbes`
-#' A list of 24:
-#' \describe{
-#'   \item{Chr1}{chromosome 1 CpG Positions}
-#'   \item{Chr2}{chromosome 2 CpG Positions}
-#'   \item{Chr3}{chromosome 3 CpG Positions}
-#'   ...
-#' }
-#' @source <https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hs1.html>
-"backgroundProbes"
 #'
 #' @param Mdata matrix of betas, preferably cell-type corrected, or M-values, where rows are observations and colums are array probes.
 #' @param meds medians of probe betas, used if constraining adjacent probe maximum difference
