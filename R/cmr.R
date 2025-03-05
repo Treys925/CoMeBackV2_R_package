@@ -26,6 +26,9 @@
 #' @author Trey Smith, \email{treysm@@umich.edu}
 #' @importFrom stats cor
 #' @export cmr
+#' 
+utils::globalVariables(c("Anno450k", "AnnoEPIC", "AnnoEPICv2", "backgroundProbes"))
+
 cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38", "hs1"),cormethod=c("pearson", "kendall", "spearman"), 
              corlo=NULL,corhi=corlo,corlodst=400,corhidst=1, maxprbdst=2000, maxdlvl=Inf, verbose=TRUE){ #
   # scan probes sequentially, get the number of CpGs between them, and based on that estimate correlation or not,
