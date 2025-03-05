@@ -52,7 +52,7 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
     
     else{
 
-    chr_seq_GpCpos=CoMeBackV2:::init_data$chr_seq_GpCpos
+    chr_seq_GpCpos=init_data$chr_seq_GpCpos
     if(Iarray=="450K") {EPIC_Manifest=init_data$I450K_Manifest}
     else if (Iarray == "EPIC"){EPIC_Manifest=init_data$EPIC_Manifest}
     else {EPIC_Manifest=init_data$EPICv2_Manifest}
