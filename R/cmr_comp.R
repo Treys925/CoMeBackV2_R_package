@@ -2,10 +2,10 @@
 #'
 #' @description Function \code{cmr_comp} estimates a composite mehtylation measure for co-methylated regions.
 #'
-#' @param cmrs=NULL is the list of CMRs construced with a call to the cmr function.  If not provided, CMRs are estimated with the methylation data.
+#' @param cmrs is the list of CMRs construced with a call to the cmr function.  If not provided, CMRs are estimated with the methylation data.
 #' @param Mdata matrix of DNA methylation values (Beta or M), rows are observations, columns are probes
-#' @param cmethod the aggregarion method for the composite measure. One of "pca" (default), "mean" or "median"
-#' @param retweights whether to return the weights derived from the 1st PC, default is FALSE.  If set to TRUE, the output is a list of 2 elemnts: the composite methylation matrix, and a list of per-cmr weights
+#' @param cmethod the aggregation method for the composite measure. One of "pca" (default), "mean" or "median"
+#' @param retweights whether to return the weights derived from the 1st PC, default is FALSE.  If set to TRUE, the output is a list of 2 elements: the composite methylation matrix, and a list of per-cmr weights
 #' @param verbose report progress, default is TRUE
 #' @return matrix of CMR composite methylation values, one column per CMR.
 #' @examples
