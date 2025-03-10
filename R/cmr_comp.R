@@ -1,6 +1,6 @@
 #' @title Composite Methylation for Co-methylated Regions.
 #'
-#' @description Function \code{cmr_comp} estimates a composite mehtylation measure for co-methylated regions.
+#' @description Function \code{cmr_comp} estimates a composite methylation measure for co-methylated regions.
 #'
 #' @param cmrs is the list of CMRs construced with a call to the cmr function.  If not provided, CMRs are estimated with the methylation data.
 #' @param Mdata matrix of DNA methylation values (Beta or M), rows are observations, columns are probes
