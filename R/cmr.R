@@ -89,6 +89,8 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
   if (verbose) print(paste("Found ",numprbs," probes from ",chroms," out of 24 chromosomes",collapse = "" ))
 
   if((maxdlvl==1)|(is.null(meds))){
+    tryCatch(
+            {
     for (i in 1:chroms){
       cni=chrom_nams[[i]]
       manchr=EPIC_Manifest[EPIC_Manifest$CHR==cni,c("Name","MAPINFO")]
@@ -161,7 +163,15 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
 
       if (verbose) print(paste("Done chr",as.character(cni),"with",length(cmr_ac[[i]]),"cmrs"))
     } # chromosome loop
-  } else {
+    },
+      error = function(cond){
+            message("Not using a full set of CpGs")
+            message("Here's the original error message:")
+            message(conditionMessage(cond))
+            # Choose a return value in case of error
+            return(cmr_ac)
+        }
+  }) else {
     print(sprintf("Applying adjacent probe filter: max level difference %f",maxdlvl))
     names(meds)=colnames(Mdata)
     for (i in 1:chroms){
