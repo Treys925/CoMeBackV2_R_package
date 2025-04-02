@@ -171,7 +171,7 @@ cmr=function(Mdata,meds=NULL,Iarray=c("450K", "EPIC", "EPICv2"),Build = c("hg38"
             # Choose a return value in case of error
             return(cmr_ac)
         }
-  }) else {
+  ) else {
     print(sprintf("Applying adjacent probe filter: max level difference %f",maxdlvl))
     names(meds)=colnames(Mdata)
     for (i in 1:chroms){
